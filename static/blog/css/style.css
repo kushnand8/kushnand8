@@ -1,0 +1,14 @@
+body{
+background-color:rgb(75,74,74);
+color: antiwhite;
+}
+
+.jumbotron{
+background-color:rgb(77,75,76);
+color: antiwhite;
+}
+.title{
+font-weight:bold;
+}
+.labels{
+font-weight:bold}

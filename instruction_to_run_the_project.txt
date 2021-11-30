@@ -1,0 +1,49 @@
+how to run the project?
+
+project name = demo6
+app name = blog
+superuser = raj
+password  = raj
+
+
+
+
+1. download the project form git "demo6"    project name = demo6
+2. create a Database with following attibutes:
+
+
+database = mysql(8.0.27)
+
+database name = BLOGTABLES
+user = root
+host = localhost
+password = Nand
+port = 3306
+
+3. install all the reuired libraries which are listed inside the "required_library.txt".
+
+4. run a command to change the directory and go inside the project  -> cd demo6
+
+5. run command demo6 -> python manage.py makemigrations blog         # this is required to create the table structure 
+
+6. run another command demo6 -> python manage.py migrate             #this is required to crete table in the database.
+
+7. finally run the command demo6 -> python manage.py runserver        # this is required to run the server
+
+8. copy the url : 127.0.0.1:8000  after running the server and paste it on our browser url.
+
+
+## To create a super user follow the following command
+
+  demo6->  python manage.py createsuperuser
+  .        give the name which one you want
+           give the email
+           write a password
+           confirm your password
+
+Now again run the server and go to url and type 127.0.0.8000/admin
+and write the username and password which you created as superuser and finally you can see all the information ralated to database and tabes.
+
+### I honestly tell you that I am anable to use restapi because i am learning restapi right now.
+
+### if you have any doubt then please contact us.
