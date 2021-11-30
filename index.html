@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h3 class="text-white">Home Page</h3>
+
+
+
+    <div class="">
+        <div class="container" style="height:100px;background-color:black">
+            <h1 class="text-center text-white">Welcome to POST ADDA!!</h1>
+            <h4 class="text-white">This is an amazing place where you can read your favourite blog and can find more useful information. </h4>
+        </div>
+    </div>
+
+    <h2 class="text-center text-white">Read your favourite Posts....</h2>
+
+     {% for post in posts %}
+    <div class="jumbotron jumbotron-fluid my-3">
+        <div class="container">
+
+            <h4 class="display-6 text-white title">{{post.title}}</h4>
+           <p class="lead text-white">{{post.pst}}</p>
+                <a href="{% url 'readpost' post.id %}" class="text-white">Read Post</a>
+        </div>
+    </div>
+    {% endfor %}
+
+
+</div>
+{% endblock content %}
